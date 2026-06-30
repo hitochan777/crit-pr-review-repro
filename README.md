@@ -1,6 +1,6 @@
 # crit bug repro: PR diff vanishes on round-complete
 
-Reproduces the bug where `crit --pr PLACEHOLDER_PR` shows the correct diff on initial load,
+Reproduces the bug where `crit --pr 1` shows the correct diff on initial load,
 but after firing round-complete (re-running `crit`) the diff disappears.
 
 ## Reproduction steps
@@ -16,7 +16,7 @@ but after firing round-complete (re-running `crit`) the diff disappears.
 
 2. Start a PR review:
    ```
-   crit --pr PLACEHOLDER_PR
+   crit --pr 1
    ```
    The diff for `feat/add-logging` renders correctly on the initial load.
 
